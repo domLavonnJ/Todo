@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { useSelector, useDispatch } from 'react-redux'
-import { editName, resetname } from '../../store/actionTypes/PersonAType'
+import { editName, resetName } from '../../store/actionTypes/PersonAType'
 
 const InputPerson = () => {
 
@@ -10,12 +10,12 @@ const InputPerson = () => {
     let dispatch = useDispatch()
 
     const changeName = () => {
-        console.log(name)
         dispatch(editName(name))
 
     }
 
-    const resetName = () => {
+    const eraseName = () => {
+        dispatch(resetName())
 
     }
 
@@ -29,12 +29,11 @@ const InputPerson = () => {
                 type="text"
                 placeholder='Enter Name' />
             <button onClick={changeName} >Add</button>
-            <button onClick={resetname} >Erase</button>
+            <button onClick={eraseName} >Erase</button>
 
-        </>
+        </> || store.name !== "" && <h1>Hello {store.name} </h1>
 
         }
-
     </>
     )
 }

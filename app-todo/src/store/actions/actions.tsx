@@ -4,4 +4,11 @@ export const PersonAction = {
     resetName: "RESET NAME"
 }
 
+export const TodoAction = {
+    addTodo: "Add Todo",
+    eraseTodo: "Erase Todo"
+}
+
+
+
 

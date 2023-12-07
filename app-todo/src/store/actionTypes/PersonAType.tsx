@@ -7,10 +7,10 @@ const editName = (val: any) => {
     }
 }
 
-const resetname = () => {
+const resetName = () => {
     return {
         type: PersonAction.resetName
     }
 }
 
-export { editName, resetname } 
+export { editName, resetName } 

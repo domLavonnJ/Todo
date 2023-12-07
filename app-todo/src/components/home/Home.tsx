@@ -5,10 +5,10 @@ import InputPerson from '../person/inputPerson';
 const Home = () => {
     return (
         <>
-          <InputPerson />
-           <Todo />
+            <InputPerson />
+            <Todo />
         </>
-        
+
 
     )
 }
