@@ -12,10 +12,7 @@ const TodoReducer = (state = initialState, action: any) => {
                 action.payload
             ]
         case TodoAction.eraseTodo:
-            return {
-                ...state,
-                todoList: []
-            }
+            return []
         default:
             return state
     }
